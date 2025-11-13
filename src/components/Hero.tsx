@@ -4,24 +4,35 @@ import { useEffect, useState } from "react";
 
 // Import placeholder images from src/assets (these are SVG placeholders I added).
 // Use Vite-compatible URL imports to avoid TypeScript module declaration issues.
-const pic1 = new URL("../assets/picture1.jpg", import.meta.url).href;
-const pic2 = new URL("../assets/picture2.jpg", import.meta.url).href;
-const pic3 = new URL("../assets/picture3.jpg", import.meta.url).href;
-const pic4 = new URL("../assets/picture4.jpg", import.meta.url).href;
-const pic5 = new URL("../assets/picture5.jpg", import.meta.url).href;
-const pic6 = new URL("../assets/picture6.jpg", import.meta.url).href;
-const pic7 = new URL("../assets/picture7.jpg", import.meta.url).href;
-const pic8 = new URL("../assets/picture8.jpg", import.meta.url).href;
-const pic9 = new URL("../assets/picture9.jpg", import.meta.url).href;
-const pic10 = new URL("../assets/picture10.png", import.meta.url).href;
-const pic11 = new URL("../assets/picture11.png", import.meta.url).href;
-
+const pic1 = new URL("../assets/Picture1.jpg", import.meta.url).href;
+const pic2 = new URL("../assets/Picture2.jpg", import.meta.url).href;
+const pic3 = new URL("../assets/Picture3.jpg", import.meta.url).href;
+const pic4 = new URL("../assets/Picture4.jpg", import.meta.url).href;
+const pic5 = new URL("../assets/Picture5.jpg", import.meta.url).href;
+const pic6 = new URL("../assets/Picture6.jpg", import.meta.url).href;
+const pic7 = new URL("../assets/Picture7.jpg", import.meta.url).href;
+const pic8 = new URL("../assets/Picture8.jpg", import.meta.url).href;
+const pic9 = new URL("../assets/Picture9.jpg", import.meta.url).href;
+const pic10 = new URL("../assets/Picture10.png", import.meta.url).href;
+const pic11 = new URL("../assets/Picture11.png", import.meta.url).href;
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Use imported images (bundled from src/assets). If you prefer public/, replace these with '/picture1.jpg' etc.
-  const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8 , pic9, pic10];
+  const images = [
+    pic1,
+    pic2,
+    pic3,
+    pic4,
+    pic5,
+    pic6,
+    pic7,
+    pic8,
+    pic9,
+    pic10,
+    pic11,
+  ];
 
   // Auto change background every 4 seconds
   useEffect(() => {
@@ -69,8 +80,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl sm:text-2xl text-gray-200 mb-8"
         >
-          Transforming Indoor & outdoor spaces into premium sports facilities for
-          football, volleyball, badminton , Jogging Track, Tennis Court, and more.
+          Transforming Indoor & outdoor spaces into premium sports facilities
+          for football, volleyball, badminton , Jogging Track, Tennis Court, and
+          more.
         </motion.p>
 
         <motion.div
