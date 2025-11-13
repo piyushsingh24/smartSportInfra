@@ -43,7 +43,7 @@ const projects = [
     area: "400m Standard Track",
     description:
       "Regupol Tartan® synthetic tracks made per IAAF standards, offering balance of speed, non-slip surface, and shock absorption. Customizable in color, elasticity, and thickness. Preferred by world athletes like Usain Bolt.",
-    image: new URL("../assets/FacilitiesImage/picture3.png", import.meta.url)
+    image: new URL("../assets/FacilitiesImage/Picture3.png", import.meta.url)
       .href,
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     area: "Standard Hockey Pitch",
     description:
       "FIH certified sand-based and water-based hockey turfs used in Youth Olympics and FIH tournaments. UV-protected polypropylene yarns ensure all-weather playability. Warranty: 3–7 years.",
-    image: new URL("../assets/picture5.jpg", import.meta.url)
+    image: new URL("../assets/Picture5.jpg", import.meta.url)
       .href,
   },
   {
@@ -65,7 +65,7 @@ const projects = [
     area: "Multi-sport Layouts",
     description:
       "Smart multi-sport flooring solutions integrating football, tennis, hockey, volleyball, and athletics. Available in artificial grass, PU, PVC, and modular tile systems with zero maintenance and high durability.",
-    image: new URL("../assets/picture2.jpg", import.meta.url)
+    image: new URL("../assets/Picture2.jpg", import.meta.url)
       .href,
   },
 ];
