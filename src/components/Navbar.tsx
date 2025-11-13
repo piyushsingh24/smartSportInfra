@@ -38,7 +38,7 @@ export default function Navbar() {
           >
             <span className="text-2xl font-bold">
               <span className="text-emerald-500">Smart</span>
-              <span className="text-orange-500">Sport</span>
+              <span className="text-orange-500">Sports</span>
               <span className="text-white">Infra</span>
             </span>
           </motion.div>
