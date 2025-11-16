@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
-// import {} from "../../../assets/FacilitiesImage";
 
 const items = [
   {

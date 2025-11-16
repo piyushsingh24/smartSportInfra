@@ -30,7 +30,9 @@ export default function Footer() {
                 className="w-10 h-10 bg-slate-800 hover:bg-green-500 rounded-lg flex items-center justify-center transition-all duration-300"
                 aria-label="WhatsApp"
               >
-                <FaWhatsapp size={20} className="text-white" />
+                <span className="text-white">
+                  <FaWhatsapp size={20} />
+                </span>
               </a>
 
               <a
@@ -69,7 +71,10 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-lg">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <Mail size={18} className="text-emerald-500 mt-1 flex-shrink-0" />
+                <Mail
+                  size={18}
+                  className="text-emerald-500 mt-1 flex-shrink-0"
+                />
                 <a
                   href="mailto:smartSportsinfrastructure@gmail.com"
                   className="text-gray-400 hover:text-emerald-500 transition-colors duration-200 break-all"
@@ -89,8 +94,7 @@ export default function Footer() {
               </li>
 
               <li className="text-gray-400 leading-relaxed">
-               Vaishali sector  5 plot 609 Second floor 
-                Ghaziabad - 201010
+                Vaishali sector 5 plot 609 Second floor Ghaziabad - 201010
               </li>
             </ul>
           </div>

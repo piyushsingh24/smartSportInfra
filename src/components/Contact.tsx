@@ -26,9 +26,6 @@ export default function Contact() {
     setSubmitting(true);
     setResult("");
 
-    // Read API key from Vite environment variable. Set VITE_WEB3FORMS_KEY in your local `.env`.
-    // Example `.env` (not committed):
-    // VITE_WEB3FORMS_KEY=your_real_key_here
     const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY as string | undefined;
 
     if (!ACCESS_KEY) {
@@ -63,8 +60,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative py-20 bg-slate-900">
+      {/* Grid Background */}
+      
+      {/* <div className="absolute inset-0 bg-slate-950 z-0">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[length:14px_24px]"></div>
+      </div> */}
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -83,7 +86,7 @@ export default function Contact() {
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* -------- LEFT SECTION: Contact Info -------- */}
+          {/* LEFT SECTION: Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -102,9 +105,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
-                  <p className="text-gray-400">
-                    smartSportsinfrastructure@gmail.com
-                  </p>
+                  <p className="text-gray-400">smartSportsinfrastructure@gmail.com</p>
                 </div>
               </div>
 
@@ -137,17 +138,13 @@ export default function Contact() {
             {/* Business Hours */}
             <div className="mt-8 p-6 bg-gradient-to-br from-emerald-500/10 to-orange-500/10 rounded-2xl border border-emerald-500/20">
               <h4 className="text-white font-semibold mb-2">Business Hours</h4>
-              <p className="text-gray-400">
-                Monday - Friday: 9:00 AM - 6:00 PM
-              </p>
-              <p className="text-gray-400">
-                Saturday & Tuesday: 10:00 AM - 4:00 PM
-              </p>
+              <p className="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p className="text-gray-400">Saturday & Tuesday: 10:00 AM - 4:00 PM</p>
               <p className="text-gray-400">Sunday: Closed</p>
             </div>
           </motion.div>
 
-          {/* -------- RIGHT SECTION: Form -------- */}
+          {/* RIGHT SECTION: Form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -157,10 +154,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div>
-                <label
-                  htmlFor="name"
-                  className="block text-white font-semibold mb-2"
-                >
+                <label htmlFor="name" className="block text-white font-semibold mb-2">
                   Name
                 </label>
                 <input
@@ -177,10 +171,7 @@ export default function Contact() {
 
               {/* Email */}
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-white font-semibold mb-2"
-                >
+                <label htmlFor="email" className="block text-white font-semibold mb-2">
                   Email
                 </label>
                 <input
@@ -197,10 +188,7 @@ export default function Contact() {
 
               {/* Phone */}
               <div>
-                <label
-                  htmlFor="phone"
-                  className="block text-white font-semibold mb-2"
-                >
+                <label htmlFor="phone" className="block text-white font-semibold mb-2">
                   Mobile
                 </label>
                 <input
@@ -217,10 +205,7 @@ export default function Contact() {
 
               {/* Message */}
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-white font-semibold mb-2"
-                >
+                <label htmlFor="message" className="block text-white font-semibold mb-2">
                   Message
                 </label>
                 <textarea
@@ -257,9 +242,7 @@ export default function Contact() {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   className={`text-center font-semibold ${
-                    result.includes("Thank")
-                      ? "text-emerald-500"
-                      : "text-red-500"
+                    result.includes("Thank") ? "text-emerald-500" : "text-red-500"
                   }`}
                 >
                   {result}

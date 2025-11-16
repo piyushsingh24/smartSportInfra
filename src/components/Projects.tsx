@@ -4,7 +4,7 @@ import { MapPin, Calendar } from "lucide-react";
 const projects = [
   {
     title: "Synthetic PU Flooring",
-    location: "Casali Sports ",
+    location: "Pan-India Projects",
     date: "2024",
     client: "Certified by FIBA & BWF",
     area: "7,500+ Courts Worldwide",
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Squash Court Construction",
-    location: "Approved by WSF",
+    location: "Pan-India Projects",
     date: "2023",
     client: "Sports Complexes & Clubs",
     area: "Standard Court Size",
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: "IAAF Approved Synthetic Athletic Track",
-    location: "Global Installations",
+    location: "Pan-India Projects",
     date: "2023",
     client: "Regupol AG & Compact Systems",
     area: "400m Standard Track",
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     title: "Synthetic Hockey Field",
-    location: "FIH Approved ",
+    location: "Pan-India Projects",
     date: "2023",
     client: "Forbex Turf Systems",
     area: "Standard Hockey Pitch",
@@ -59,7 +59,7 @@ const projects = [
   },
   {
     title: "Synthetic Multi Sports Facility",
-    location: "Educational & Institutional Projects",
+    location: "Pan-India Projects",
     date: "2022",
     client: "Schools, Colleges & Private Academies",
     area: "Multi-sport Layouts",
