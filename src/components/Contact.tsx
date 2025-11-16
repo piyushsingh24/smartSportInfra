@@ -62,13 +62,12 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-20 bg-slate-900">
       {/* Grid Background */}
-      
+
       {/* <div className="absolute inset-0 bg-slate-950 z-0">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[length:14px_24px]"></div>
       </div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
