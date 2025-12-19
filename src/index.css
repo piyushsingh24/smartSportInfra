@@ -129,7 +129,7 @@
 
 /* Tailwind plugin approach or global CSS */
 .scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
 }
 
 .scrollbar-hide {
