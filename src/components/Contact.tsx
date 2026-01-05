@@ -60,151 +60,152 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-20 bg-slate-900">
-      {/* Grid Background */}
-
-      {/* <div className="absolute inset-0 bg-slate-950 z-0">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[length:14px_24px]"></div>
-      </div> */}
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="contact"
+      className="relative bg-slate-900 py-12 sm:py-16 lg:py-20 w-full overflow-hidden"
+    >
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-14 lg:mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3">
             Get In <span className="text-emerald-500">Touch</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 max-w-xl lg:max-w-2xl mx-auto">
             Ready to transform your sports facility? Let's discuss your project.
           </p>
         </motion.div>
 
-        {/* Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* LEFT SECTION: Contact Info */}
+        {/* Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-14">
+          {/* LEFT: INFO */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="space-y-8"
           >
-            <h3 className="text-2xl font-bold text-white mb-6">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
               Contact Information
             </h3>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               {/* Email */}
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Mail className="text-white" size={24} />
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center shrink-0">
+                  <Mail size={20} className="text-white" />
                 </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-1">Email</h4>
-                  <p className="text-gray-400">smartSportsinfrastructure@gmail.com</p>
+                <div className="min-w-0">
+                  <h4 className="text-white font-semibold text-sm sm:text-base">
+                    Email
+                  </h4>
+                  <p className="text-gray-400 text-xs sm:text-sm break-all">
+                    smartSportsinfrastructure@gmail.com
+                  </p>
                 </div>
               </div>
 
               {/* Phone */}
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Phone className="text-white" size={24} />
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center shrink-0">
+                  <Phone size={20} className="text-white" />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-1">Phone</h4>
-                  <p className="text-gray-400">+91 9773911108</p>
+                  <h4 className="text-white font-semibold text-sm sm:text-base">
+                    Phone
+                  </h4>
+                  <p className="text-gray-400 text-xs sm:text-sm">
+                    +91 9773911108
+                  </p>
                 </div>
               </div>
 
               {/* Location */}
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <MapPin className="text-white" size={24} />
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shrink-0">
+                  <MapPin size={20} className="text-white" />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-1">Location</h4>
-                  <p className="text-gray-400">
-                    Vaishali sector 5, plot 609, Second floor
+                  <h4 className="text-white font-semibold text-sm sm:text-base">
+                    Location
+                  </h4>
+                  <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                    Vaishali Sector 5, Plot 609
+                    <br />
+                    Second Floor, Ghaziabad – 201010
                   </p>
-                  <p className="text-gray-400">GHAZIABAD - 201010</p>
                 </div>
               </div>
             </div>
 
             {/* Business Hours */}
-            <div className="mt-8 p-6 bg-gradient-to-br from-emerald-500/10 to-orange-500/10 rounded-2xl border border-emerald-500/20">
-              <h4 className="text-white font-semibold mb-2">Business Hours</h4>
-              <p className="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
-              <p className="text-gray-400">Saturday & Tuesday: 10:00 AM - 4:00 PM</p>
-              <p className="text-gray-400">Sunday: Closed</p>
+            <div className="p-4 sm:p-6 rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-emerald-500/10 to-orange-500/10">
+              <h4 className="text-white font-semibold mb-2 text-sm sm:text-base">
+                Business Hours
+              </h4>
+              <p className="text-gray-400 text-xs sm:text-sm">
+                Mon – Fri: 9:00 AM – 6:00 PM
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">
+                Sat: 10:00 AM – 4:00 PM
+              </p>
+              <p className="text-gray-400 text-xs sm:text-sm">Sunday: Closed</p>
             </div>
           </motion.div>
 
-          {/* RIGHT SECTION: Form */}
+          {/* RIGHT: FORM */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name */}
-              <div>
-                <label htmlFor="name" className="block text-white font-semibold mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors duration-300"
-                  placeholder="Your name"
-                />
-              </div>
-
-              {/* Email */}
-              <div>
-                <label htmlFor="email" className="block text-white font-semibold mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors duration-300"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-
-              {/* Phone */}
-              <div>
-                <label htmlFor="phone" className="block text-white font-semibold mb-2">
-                  Mobile
-                </label>
-                <input
-                  type="text"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors duration-300"
-                  placeholder="9999999999"
-                />
-              </div>
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+              {[
+                {
+                  label: "Name",
+                  id: "name",
+                  type: "text",
+                  placeholder: "Your name",
+                },
+                {
+                  label: "Email",
+                  id: "email",
+                  type: "email",
+                  placeholder: "your@email.com",
+                },
+                {
+                  label: "Mobile",
+                  id: "phone",
+                  type: "text",
+                  placeholder: "9999999999",
+                },
+              ].map((field) => (
+                <div key={field.id}>
+                  <label className="block text-white font-semibold mb-1 text-sm">
+                    {field.label}
+                  </label>
+                  <input
+                    {...field}
+                    name={field.id}
+                    value={(formData as any)[field.id]}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm md:text-base bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-emerald-500 focus:outline-none"
+                  />
+                </div>
+              ))}
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-white font-semibold mb-2">
+                <label className="block text-white font-semibold mb-1 text-sm">
                   Message
                 </label>
                 <textarea
@@ -213,39 +214,37 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={6}
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors duration-300 resize-none"
+                  rows={4}
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm md:text-base bg-slate-800 border border-slate-700 rounded-xl text-white resize-none focus:border-emerald-500 focus:outline-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
 
-              {/* Submit Button */}
+              {/* Submit */}
               <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="submit"
+                whileTap={{ scale: 0.97 }}
                 disabled={submitting}
-                className={`w-full px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 shadow-lg ${
+                type="submit"
+                className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 text-sm sm:text-base transition ${
                   submitting
                     ? "bg-slate-700 cursor-not-allowed"
-                    : "bg-gradient-to-r from-emerald-500 to-orange-500 hover:from-emerald-600 hover:to-orange-600 text-white"
+                    : "bg-gradient-to-r from-emerald-500 to-orange-500 hover:from-emerald-600 hover:to-orange-600"
                 }`}
               >
                 {submitting ? "Sending..." : "Send Message"}
-                <Send size={20} />
+                <Send size={16} />
               </motion.button>
 
-              {/* Result Message */}
               {result && (
-                <motion.p
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className={`text-center font-semibold ${
-                    result.includes("Thank") ? "text-emerald-500" : "text-red-500"
+                <p
+                  className={`text-center text-xs sm:text-sm font-semibold ${
+                    result.includes("Thank")
+                      ? "text-emerald-500"
+                      : "text-red-500"
                   }`}
                 >
                   {result}
-                </motion.p>
+                </p>
               )}
             </form>
           </motion.div>

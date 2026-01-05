@@ -30,7 +30,8 @@ export default function Facilities() {
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-4xl font-bold text-center mb-16">
-          Our <span className="text-orange-500">Journey</span>
+          Your 
+           <span className="text-orange-500"> Work</span>
         </h2>
 
         {/* Responsive Timeline Container */}

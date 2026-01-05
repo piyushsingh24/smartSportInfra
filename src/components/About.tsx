@@ -37,7 +37,6 @@ const federationLogos = [
   "fiba.png",
   "ihf.png",
   "irb.png",
-  "iaaf.png",
   "forbex.svg",
 ];
 
@@ -54,7 +53,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            About <span className="text-emerald-500">SmartSportsInfra</span>
+            About <span className="text-emerald-500 md:text-5xl text-2xl ">SmartSportsInfraStructure</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Smart Sports Infrastructure was founded with the objective of
@@ -71,7 +70,7 @@ export default function About() {
             <br />
             Our products are certified by global sports bodies such as{" "}
             <span className="text-orange-400 font-medium">
-              FIFA, FIH, ITF, BWF, FIBA, IHF, IRB, IAAF, FORBEX, CASALI, and BSW
+              FIFA, FIH, ITF, BWF, FIBA, IHF, IRB,WA, and BSW
             </span>
             , ensuring unmatched quality and durability for both indoor and
             outdoor facilities.

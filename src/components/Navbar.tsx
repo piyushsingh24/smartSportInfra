@@ -15,7 +15,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '/#home' },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
@@ -36,10 +36,10 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center"
           >
-            <span className="text-2xl font-bold">
+            <span className=" md:text-2xl font-bold">
               <span className="text-emerald-500">Smart</span>
               <span className="text-orange-500">Sports</span>
-              <span className="text-white">Infra</span>
+              <span className="text-white">Infrastructure  </span>
             </span>
           </motion.div>
 
