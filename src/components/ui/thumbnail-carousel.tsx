@@ -22,31 +22,31 @@ const items = [
   },
   {
     id: 4,
-    url: new URL("../../assets/FacilitiesImage/picture4.jpg", import.meta.url)
+    url: new URL("../../assets/FacilitiesImage/Picture4.jpg", import.meta.url)
       .href,
     title: "Jogging Track",
   },
   {
     id: 5,
-    url: new URL("../../assets/FacilitiesImage/picture5.jpg", import.meta.url)
+    url: new URL("../../assets/FacilitiesImage/Picture5.jpg", import.meta.url)
       .href,
     title: "Tennis Court",
   },
   {
     id: 6,
-    url: new URL("../../assets/FacilitiesImage/picture6.jpg", import.meta.url)
+    url: new URL("../../assets/FacilitiesImage/Picture6.jpg", import.meta.url)
       .href,
     title: "Basketball Court",
   },
   {
     id: 7,
-    url: new URL("../../assets/FacilitiesImage/picture7.jpg", import.meta.url)
+    url: new URL("../../assets/FacilitiesImage/Picture7.jpg", import.meta.url)
       .href,
     title: "Volleyball Court",
   },
   {
     id: 8,
-    url: new URL("../../assets/FacilitiesImage/picture8.jpg", import.meta.url)
+    url: new URL("../../assets/FacilitiesImage/Picture8.jpg", import.meta.url)
       .href,
     title: "Badminton Court",
   },
