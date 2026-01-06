@@ -15,8 +15,8 @@ export default function Footer() {
           <div className="sm:col-span-2">
             <h3 className="text-sm md:text-2xl font-bold mb-3">
               <span className="text-emerald-500">Smart</span>
-              <span className="text-orange-500">Sport</span>
-              <span className="text-white"> Infrastructure</span>
+              <span className="text-orange-500">Sports</span>
+              <span className="text-white">InfraStructure</span>
             </h3>
 
             <p className="text-gray-400 mb-5 leading-relaxed max-w-md text-sm sm:text-base">

@@ -70,7 +70,7 @@ export default function About() {
             <br />
             Our products are certified by global sports bodies such as{" "}
             <span className="text-orange-400 font-medium">
-              FIFA, FIH, ITF, BWF, FIBA, IHF, IRB,WA, and BSW
+              FIFA, FIH, ITF, BWF, FIBA, IHF, IRB,WA
             </span>
             , ensuring unmatched quality and durability for both indoor and
             outdoor facilities.
